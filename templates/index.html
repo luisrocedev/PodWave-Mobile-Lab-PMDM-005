@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>PodWave Mobile Lab · PMDM 005</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <h1>PodWave</h1>
+        <p id="sessionLabel">Sesión no iniciada</p>
+      </header>
+
+      <main id="screens">
+        <section id="screen-home" class="screen active">
+          <h2>Inicio</h2>
+          <div class="register-row">
+            <input id="userName" type="text" placeholder="Nombre" />
+            <input id="userDni" type="text" placeholder="DNI" value="53945291X" />
+            <button id="btnRegister">Entrar</button>
+          </div>
+          <h3>Canales</h3>
+          <div id="channelsList" class="card-list"></div>
+          <h3>Top episodios</h3>
+          <div id="homeEpisodes" class="card-list"></div>
+        </section>
+
+        <section id="screen-explore" class="screen">
+          <h2>Explorar</h2>
+          <div class="chips">
+            <button data-mood="">Todos</button>
+            <button data-mood="Focus">Focus</button>
+            <button data-mood="Build">Build</button>
+            <button data-mood="Calm">Calm</button>
+          </div>
+          <div id="exploreEpisodes" class="list"></div>
+        </section>
+
+        <section id="screen-library" class="screen">
+          <h2>Biblioteca</h2>
+          <div id="favoritesList" class="list"></div>
+          <h3>Métricas</h3>
+          <div id="stats" class="kpis"></div>
+          <h3>Ranking</h3>
+          <div id="leaders" class="list"></div>
+        </section>
+      </main>
+
+      <footer class="tabbar">
+        <button data-target="home" class="tab active">🏠<span>Inicio</span></button>
+        <button data-target="explore" class="tab">🔎<span>Explorar</span></button>
+        <button data-target="library" class="tab">📚<span>Biblioteca</span></button>
+      </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
