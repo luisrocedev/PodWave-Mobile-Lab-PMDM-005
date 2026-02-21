@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Production-brightgreen)]()
 
-*Aplicación de tipo Spotify/Podcast mobile-first construida como SPA con Flask + Vanilla JS*
+_Aplicación de tipo Spotify/Podcast mobile-first construida como SPA con Flask + Vanilla JS_
 
 </div>
 
@@ -42,34 +42,36 @@ El proyecto demuestra competencias clave en desarrollo móvil: gestión de estad
 ## ✨ Características
 
 ### Core
-| Módulo | Descripción |
-|--------|-------------|
-| 📱 **SPA Mobile-First** | Interfaz optimizada para pantallas ≤430px con frame centrado |
-| 🗂 **3 Pantallas** | Inicio · Explorar · Biblioteca con transiciones animadas |
-| 🔐 **Registro de usuarios** | Alta con nombre + DNI, inicio de sesión automático |
-| 🎵 **Canales y episodios** | 3 canales de podcast, 6 episodios con moods (Focus/Build/Calm) |
-| ❤️ **Favoritos** | Toggle de favoritos por episodio con persistencia en BD |
+
+| Módulo                         | Descripción                                                      |
+| ------------------------------ | ---------------------------------------------------------------- |
+| 📱 **SPA Mobile-First**        | Interfaz optimizada para pantallas ≤430px con frame centrado     |
+| 🗂 **3 Pantallas**             | Inicio · Explorar · Biblioteca con transiciones animadas         |
+| 🔐 **Registro de usuarios**    | Alta con nombre + DNI, inicio de sesión automático               |
+| 🎵 **Canales y episodios**     | 3 canales de podcast, 6 episodios con moods (Focus/Build/Calm)   |
+| ❤️ **Favoritos**               | Toggle de favoritos por episodio con persistencia en BD          |
 | 📊 **Métricas en tiempo real** | KPIs: usuarios, canales, episodios, sesiones, eventos, favoritos |
-| 🏆 **Ranking** | Leaderboard con sesiones, plays y favoritos por usuario |
-| 📡 **Telemetría** | Logging de eventos (screen_view, play, favorite, session) |
+| 🏆 **Ranking**                 | Leaderboard con sesiones, plays y favoritos por usuario          |
+| 📡 **Telemetría**              | Logging de eventos (screen_view, play, favorite, session)        |
 
 ### 14 Mejoras Avanzadas
-| # | Mejora | Estado |
-|---|--------|--------|
-| 1 | 🎨 **Design-System v2** — Catálogo completo de CSS tokens (colores, radios, sombras, transiciones) | ✅ |
-| 2 | 🔔 **Toast Notifications** — 4 variantes (ok/info/warning/danger), auto-dismiss 2.8s | ✅ |
-| 3 | 🌓 **Toggle Dark/Light** — Tema persistente con localStorage | ✅ |
-| 4 | 🟢 **Status LED** — Indicador animado con pulse al hacer login | ✅ |
-| 5 | 🎵 **Mini-player** — Reproductor fijo con barra de progreso | ✅ |
-| 6 | 👆 **Swipe Navigation** — Gestos táctiles horizontales entre tabs | ✅ |
-| 7 | 🔍 **Búsqueda de episodios** — Filtrado por título, canal y mood | ✅ |
-| 8 | 🥇 **Rank Badges** — Medallas oro/plata/bronce para top 3 | ✅ |
-| 9 | 💊 **Active Mood Chips** — Estado persistente `.active` con acento | ✅ |
-| 10 | 🔴 **Badge Counts** — Contadores en Explorar (#episodios) y Biblioteca (#favoritos) | ✅ |
-| 11 | ⌨️ **Keyboard Shortcuts** — 1/2/3 (tabs), Space (play/pause), Esc (cerrar player) | ✅ |
-| 12 | 🌱 **Seed + Export + Import** — Datos de prueba, export/import JSON | ✅ |
-| 13 | 📭 **Empty States** — Icono + mensaje cuando no hay datos | ✅ |
-| 14 | 📐 **Responsive 480px** — Full width, 2-col KPIs, auth row colapsado | ✅ |
+
+| #   | Mejora                                                                                             | Estado |
+| --- | -------------------------------------------------------------------------------------------------- | ------ |
+| 1   | 🎨 **Design-System v2** — Catálogo completo de CSS tokens (colores, radios, sombras, transiciones) | ✅     |
+| 2   | 🔔 **Toast Notifications** — 4 variantes (ok/info/warning/danger), auto-dismiss 2.8s               | ✅     |
+| 3   | 🌓 **Toggle Dark/Light** — Tema persistente con localStorage                                       | ✅     |
+| 4   | 🟢 **Status LED** — Indicador animado con pulse al hacer login                                     | ✅     |
+| 5   | 🎵 **Mini-player** — Reproductor fijo con barra de progreso                                        | ✅     |
+| 6   | 👆 **Swipe Navigation** — Gestos táctiles horizontales entre tabs                                  | ✅     |
+| 7   | 🔍 **Búsqueda de episodios** — Filtrado por título, canal y mood                                   | ✅     |
+| 8   | 🥇 **Rank Badges** — Medallas oro/plata/bronce para top 3                                          | ✅     |
+| 9   | 💊 **Active Mood Chips** — Estado persistente `.active` con acento                                 | ✅     |
+| 10  | 🔴 **Badge Counts** — Contadores en Explorar (#episodios) y Biblioteca (#favoritos)                | ✅     |
+| 11  | ⌨️ **Keyboard Shortcuts** — 1/2/3 (tabs), Space (play/pause), Esc (cerrar player)                  | ✅     |
+| 12  | 🌱 **Seed + Export + Import** — Datos de prueba, export/import JSON                                | ✅     |
+| 13  | 📭 **Empty States** — Icono + mensaje cuando no hay datos                                          | ✅     |
+| 14  | 📐 **Responsive 480px** — Full width, 2-col KPIs, auth row colapsado                               | ✅     |
 
 ---
 
@@ -102,19 +104,20 @@ El proyecto demuestra competencias clave en desarrollo móvil: gestión de estad
 
 ## 🛠 Stack tecnológico
 
-| Capa | Tecnología |
-|------|-----------|
-| Backend | Python 3.10+ · Flask 3.x |
-| Base de datos | SQLite 3 (file-based) |
-| Frontend | HTML5 · CSS3 · Vanilla JavaScript ES6+ |
-| Diseño | Mobile-first · CSS Grid · Flexbox · Custom Properties |
-| Servidor | Development server (Werkzeug) |
+| Capa          | Tecnología                                            |
+| ------------- | ----------------------------------------------------- |
+| Backend       | Python 3.10+ · Flask 3.x                              |
+| Base de datos | SQLite 3 (file-based)                                 |
+| Frontend      | HTML5 · CSS3 · Vanilla JavaScript ES6+                |
+| Diseño        | Mobile-first · CSS Grid · Flexbox · Custom Properties |
+| Servidor      | Development server (Werkzeug)                         |
 
 ---
 
 ## 🚀 Instalación
 
 ### Requisitos previos
+
 - Python 3.10+
 - pip
 
@@ -157,19 +160,19 @@ La app estará disponible en **http://localhost:5090**
 
 ## 📡 API REST
 
-| Método | Endpoint | Descripción |
-|--------|----------|-------------|
-| `POST` | `/api/users/register` | Registrar/login usuario `{name, dni}` |
-| `POST` | `/api/sessions/start` | Iniciar sesión `{userId}` |
-| `POST` | `/api/sessions/end` | Cerrar sesión `{sessionId, screensVisited, playsCount, favoritesCount}` |
-| `POST` | `/api/events` | Registrar evento `{sessionId, eventType, episodeId, screenName, payload}` |
-| `GET` | `/api/channels` | Listar canales |
-| `GET` | `/api/episodes?mood=X` | Listar episodios (filtro mood opcional) |
-| `POST` | `/api/favorites/toggle` | Toggle favorito `{userId, episodeId}` |
-| `GET` | `/api/users/:id/favorites` | Obtener favoritos del usuario |
-| `GET` | `/api/leaderboard` | Ranking de usuarios |
-| `GET` | `/api/stats` | Estadísticas globales |
-| `GET` | `/api/health` | Health check |
+| Método | Endpoint                   | Descripción                                                               |
+| ------ | -------------------------- | ------------------------------------------------------------------------- |
+| `POST` | `/api/users/register`      | Registrar/login usuario `{name, dni}`                                     |
+| `POST` | `/api/sessions/start`      | Iniciar sesión `{userId}`                                                 |
+| `POST` | `/api/sessions/end`        | Cerrar sesión `{sessionId, screensVisited, playsCount, favoritesCount}`   |
+| `POST` | `/api/events`              | Registrar evento `{sessionId, eventType, episodeId, screenName, payload}` |
+| `GET`  | `/api/channels`            | Listar canales                                                            |
+| `GET`  | `/api/episodes?mood=X`     | Listar episodios (filtro mood opcional)                                   |
+| `POST` | `/api/favorites/toggle`    | Toggle favorito `{userId, episodeId}`                                     |
+| `GET`  | `/api/users/:id/favorites` | Obtener favoritos del usuario                                             |
+| `GET`  | `/api/leaderboard`         | Ranking de usuarios                                                       |
+| `GET`  | `/api/stats`               | Estadísticas globales                                                     |
+| `GET`  | `/api/health`              | Health check                                                              |
 
 ---
 
@@ -195,13 +198,13 @@ PodWave-Mobile-Lab-PMDM-005/
 
 ## 🎓 Contexto académico
 
-| Campo | Valor |
-|-------|-------|
-| Módulo | PMDM — Programación Multimedia y Dispositivos Móviles |
-| Ciclo | DAM2 · Desarrollo de Aplicaciones Multiplataforma |
-| Curso | 2025 / 2026 |
-| Centro | IES |
-| Actividad | 005 · Desarrollo de App Móvil (Podcast Mobile-First) |
+| Campo     | Valor                                                 |
+| --------- | ----------------------------------------------------- |
+| Módulo    | PMDM — Programación Multimedia y Dispositivos Móviles |
+| Ciclo     | DAM2 · Desarrollo de Aplicaciones Multiplataforma     |
+| Curso     | 2025 / 2026                                           |
+| Centro    | IES                                                   |
+| Actividad | 005 · Desarrollo de App Móvil (Podcast Mobile-First)  |
 
 ---
 
@@ -214,6 +217,6 @@ DNI: 53945291X · DAM2 2025/26
 
 <div align="center">
 
-*Built with ❤️ using Flask + Vanilla JS*
+_Built with ❤️ using Flask + Vanilla JS_
 
 </div>
